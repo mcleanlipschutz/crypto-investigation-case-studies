@@ -1,6 +1,6 @@
 # Cryptocurrency Investigation Case Studies
 
-A public portfolio of cryptocurrency tracing, blockchain investigation methodology, cross-chain analysis, attribution handling, and investigative documentation.
+A public portfolio of cryptocurrency tracing, blockchain investigation methodology, cross-chain analysis, incident triage, attribution handling, and investigative documentation.
 
 ## Purpose
 
@@ -10,7 +10,7 @@ Because of that, the case studies in this repository use public blockchain data,
 
 I am not claiming credit for the original investigations documented here. These are independent reconstructions used to demonstrate tracing methodology, evidence handling, wallet organization, asset attribution, cross-chain analysis, and investigative decision-making.
 
-## Featured Case Study
+## Featured Case Studies
 
 ### [Bybit / Lazarus Group 2025 — Cross-Chain Crypto Tracing Case Study](bybit-lazarus-2025/README.md)
 
@@ -29,6 +29,12 @@ The February 2025 Bybit theft is a useful tracing case because the laundering ac
 - official FBI attribution to North Korean TraderTraitor activity
 
 The case study separates direct on-chain evidence from government attribution, blockchain-intelligence attribution, and analytical links. A connection is not treated as proven simply because it appears in a public cluster or tracing platform.
+
+### [DMM Bitcoin 2024 — Bitcoin Trace and Triage Case Study](dmm-bitcoin-2024/README.md)
+
+A public-source reconstruction of the initial distribution following the DMM Bitcoin theft, with 11 transactions cross-checked against two public Bitcoin explorers. It includes exact output and fee accounting, ten destination outputs, a saved evidence snapshot, and an offline verification script.
+
+The accompanying triage workflow shows how to prioritize leads, review AI-generated assertions, handle conflicting sources, and prepare a clear investigative handoff. It separates verified transaction fields from public attribution and proposed actions. No participation in the original investigation or asset recovery is claimed.
 
 ## Investigative Approach
 
@@ -62,15 +68,10 @@ I use four basic evidence levels throughout these public reconstructions:
 
 ## Repository Structure
 
-```text
-crypto-investigation-case-studies/
-├── README.md
-└── bybit-lazarus-2025/
-    ├── README.md
-    ├── wallets-and-transactions.md
-    ├── methodology.md
-    └── sources.md
-```
+| Case folder | Contents |
+|---|---|
+| [bybit-lazarus-2025](bybit-lazarus-2025/README.md) | Overview, wallets and transactions, methodology, sources |
+| [dmm-bitcoin-2024](dmm-bitcoin-2024/README.md) | Overview, verified initial Bitcoin distribution, triage and handoff, sources, evidence snapshot, validation script |
 
 Additional public or synthetic case studies can be added as separate folders while keeping the same evidence standard.
 
