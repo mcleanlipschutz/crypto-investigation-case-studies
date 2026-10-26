@@ -36,6 +36,12 @@ A public-source reconstruction of the initial distribution following the DMM Bit
 
 The accompanying triage workflow shows how to prioritize leads, review AI-generated assertions, handle conflicting sources, and prepare a clear investigative handoff. It separates verified transaction fields from public attribution and proposed actions. No participation in the original investigation or asset recovery is claimed.
 
+### [USDT Approval Phishing 2026 — Ethereum Scam Trace and Triage](usdt-approval-phishing-2026/README.md)
+
+A reconstruction of the July 8, 2026 Ethereum approval-phishing incident covered in the news on July 9. It verifies an initial loss of 999,999.368915 USDT across two transactions and three Transfer events, with exact token-unit accounting and four transaction cross-checks between Etherscan and Blockscout.
+
+The study examines an unlimited token approval, a successful multicall containing a failed internal transfer, and a look-alike USDT token excluded from the loss. It includes captured evidence, an offline verification script, source discrepancies, and a proposed investigative handoff. It does not claim participation in the original case or recovery of funds.
+
 ## Investigative Approach
 
 For each material hop, I want enough information that another investigator can understand why it belongs in the trace:
@@ -72,6 +78,7 @@ I use four basic evidence levels throughout these public reconstructions:
 |---|---|
 | [bybit-lazarus-2025](bybit-lazarus-2025/README.md) | Overview, wallets and transactions, methodology, sources |
 | [dmm-bitcoin-2024](dmm-bitcoin-2024/README.md) | Overview, verified initial Bitcoin distribution, triage and handoff, sources, evidence snapshot, validation script |
+| [usdt-approval-phishing-2026](usdt-approval-phishing-2026/README.md) | Overview, approval and transfer evidence, token exclusions, triage and handoff, sources, evidence snapshot, validation script |
 
 Additional public or synthetic case studies can be added as separate folders while keeping the same evidence standard.
 
