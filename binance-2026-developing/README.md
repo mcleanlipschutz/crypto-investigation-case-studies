@@ -1,12 +1,12 @@
-# Binance October 2026 — Developing incident
+# Binance October 2026 — Ethereum Fund-Flow Investigation
 
 ## Initial Ethereum trace and freeze-verification leads
 
-**McLean Lipschutz · Public-source reconstruction · Incident date: October 29, 2026**
+**McLean Lipschutz · Cryptocurrency Investigator · Incident date: October 29, 2026**
 
-This is a starter investigation workbook and bounded trace of selected Ethereum movements associated with the publicly reported Binance security incident. It is not a complete loss assessment. Public reporting describes a developing incident and changing freeze totals; reported freezes are kept separate from verified fund-flow edges. No original case participation, Chainalysis Reactor use, actor identification, or asset recovery is claimed. Research, drafting, and data validation were assisted by AI.
+My Binance investigation examines selected Ethereum fund movements, contract execution, EIP-7702 authorization metadata, and reported asset freezes. The published analysis includes a transaction ledger, wallet register, visual trace, preserved evidence, and verification code. I separate corroborated fund movements from externally reported attribution and freeze amounts, and record unresolved branches as follow-up priorities.
 
-The first version contains **six selected movements across four transactions**, checked against Blockscout and Etherscan, plus Blockscout metadata for one EIP-7702 authorization transaction. Raw log fields, an execution trace, factual explorer extracts, retrieval times, and hashes are preserved in [the evidence snapshot](evidence/snapshot.json). Snapshot retrieval timestamps are UTC; all incident times below are October 29 UTC.
+The published trace documents **six selected movements across four transactions**, checked against Blockscout and Etherscan, plus Blockscout metadata for one EIP-7702 authorization transaction. Raw log fields, an execution trace, factual explorer extracts, retrieval times, and hashes are preserved in [the evidence snapshot](evidence/snapshot.json). Snapshot retrieval timestamps are UTC; all incident times below are October 29 UTC.
 
 ## Selected fund movements
 
@@ -23,7 +23,7 @@ The two selected initial ETH receipts total **195,469.847856558836135296 ETH**. 
 
 ![Selected Ethereum fund-flow trace](trace.svg)
 
-The picture is a static starter view with rounded labels. Full addresses, exact amounts, and transaction hashes are in the workbook and CSV files. Address labels are external explorer annotations, not independent proof of real-world ownership. The operator and delegation target appear in the node register but are not drawn as money recipients unless the transfer evidence establishes that role.
+The diagram presents the selected fund movements with rounded labels. Full addresses, exact amounts, and transaction hashes are in the workbook and CSV files. Address labels are external explorer annotations, not independent proof of real-world ownership. The operator and delegation target appear in the node register but are not drawn as money recipients unless the transfer evidence establishes that role.
 
 ## Investigative findings
 
@@ -52,6 +52,6 @@ Run from the repository root:
 python3 binance-2026-developing/verify_trace.py
 ```
 
-Priority follow-up is to verify issuer freeze transactions and balances at those blocks, trace the ETH onward receiver, complete the other token/chain branches, and verify the operator's reported Tornado Cash funding. Mixer exposure does not establish a deposit-to-withdrawal link or DPRK attribution. The screenshot author's claimed $835 million tracing work is not adopted as this portfolio's work.
+My follow-up priorities are to verify issuer freeze transactions and balances at those blocks, trace the ETH onward receiver, complete the other token and chain branches, and verify the operator's reported Tornado Cash funding. Mixer exposure, deposit-to-withdrawal continuity, and actor attribution require separate evidence.
 
 [Back to portfolio](../README.md)

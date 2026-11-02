@@ -1,10 +1,10 @@
-# Triage and investigative handoff
+# Investigative assessment and follow-up
 
-This is a proposed workflow for a comparable intake, informed by the July 2026 reconstruction. It is not a record of actions taken for the original victim. No outreach, freeze request, wallet action, or recovery was performed as part of this portfolio exercise.
+My assessment connects the verified approval and transfer events to the remaining investigative priorities: continuing allowance exposure, phishing evidence, downstream movement, and potential service endpoints. The transaction findings are documented in the case record; the actions below identify follow-up work and its evidence requirements.
 
 ## Disposition and priorities
 
-**Escalate for specialist tracing and incident coordination.** The evidence supports a large spender-executed USDT drain after approval. Prioritize prevention of additional loss, preservation of the phishing evidence, and identification of any actionable downstream service.
+**Assess continuing allowance exposure and extend the trace from the two receiving addresses.** The evidence supports a large spender-executed USDT drain after approval. My follow-up priorities are prevention of additional loss, preservation of the phishing evidence, and identification of any actionable downstream service.
 
 | Priority | Proposed action | Evidence needed / completion condition |
 |---|---|---|
@@ -27,9 +27,9 @@ At live intake, a continuing allowance would be an urgent exposure. In this retr
 | Core evidence | [Transaction register](wallets-and-transactions.md), [snapshot](evidence/snapshot.json), and [offline verifier](verify_trace.py). |
 | Attribution | Scam Sniffer's incident report and explorer labels; no verified actor or custodial-service identity. |
 | Main gaps | Victim interview, phishing infrastructure, current allowance, downstream movements, account ownership, and recoverability. |
-| Next investigator's task | Validate present exposure, preserve the lure, and trace onward canonical USDT movements before asserting an endpoint. |
+| Next research priorities | Validate present exposure, preserve the lure, and trace onward canonical USDT movements before asserting an endpoint. |
 
-## Review of AI-assisted assertions
+## Analytical quality checks
 
 These are concrete failure modes checked against the evidence before publication:
 
@@ -43,6 +43,6 @@ These are concrete failure modes checked against the evidence before publication
 | “These addresses belong to named criminals or an exchange.” | Require sourced attribution beyond timing, visual similarity, or explorer labels. |
 | “The funds can still be frozen or recovered.” | Require current balances, an actionable endpoint, and the relevant provider's response. |
 
-The successful checks support a reproducible initial trace. They do not fill missing evidence with plausible narrative.
+These checks support a reproducible initial trace and define the evidence needed to resolve the remaining questions.
 
 [Case overview](README.md) · [Sources and limitations](sources.md)

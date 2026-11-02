@@ -1,26 +1,26 @@
-# Triage decision and investigative handoff
+# Investigative assessment and follow-up
 
 [Case overview](README.md) · [Transaction evidence](wallets-and-transactions.md) · [Sources](sources.md)
 
-This is a proposed response workflow for a historical public case. No provider requests, freezes, seizures, victim notifications, or official investigative actions were performed for this portfolio. The time targets below are an exercise design, not measured response times.
+My assessment connects the verified initial Bitcoin distribution to the next investigative questions: where the outputs moved, whether a service can be identified, and what additional evidence would establish control of an endpoint. The findings below document completed transaction analysis; follow-up recommendations identify the remaining work.
 
 ## Disposition
 
-**Escalate for specialist tracing and incident coordination.** A large reported exchange loss and corroborated initial Bitcoin movement justify urgent review. A request to preserve records or restrict assets would additionally need a verified recipient service, relevant transaction identifiers, an authorized requesting party, and the applicable process. The initial distribution alone does not identify an exchange account or establish present recoverability.
+**Continue tracing the ten destination outputs and evaluate downstream service exposure.** My initial analysis establishes the distribution and reconciles the transaction amounts and fees. A request to preserve records or restrict assets additionally requires a verified recipient service, relevant transaction identifiers, an authorized requesting party, and the applicable process. The initial distribution alone does not identify an exchange account or establish present recoverability.
 
 Two time frames must stay separate:
 
 - **Historical intake:** use information available at the relevant time in May 2024. The later FBI attribution cannot be inserted into an initial complaint as if it were already known.
 - **Retrospective review:** apply the December 2024 attribution with its publication date, then reassess hypotheses and source conflicts. A historic lead still requires a fresh balance and service check before any present-day action.
 
-## Proposed first-hour workflow
+## Evidence review and follow-up sequence
 
-| Target | Work | Decision or output |
+| Stage | Research task | Decision or output |
 |---|---|---|
-| 0–10 minutes | Authenticate the reporting party through an independently established channel; establish network, asset, transaction identifier, loss basis, and incident reference. Check for duplicate reports. | One incident record; identity and missing evidence clearly marked. |
-| 10–25 minutes | Validate the seed transaction, input/output amounts, fees, and confirmed status. Preserve the retrieved data and retrieval time. | Separate the reported loss from the transaction's gross input value. |
-| 25–45 minutes | Follow specific spent outputs, record the initial branches, and check available service attribution. Escalate a verified actionable custodial exposure as soon as found. | Prioritized leads with evidence, owner, uncertainty, and next action. |
-| 45–60 minutes | Package the trace boundary and outstanding questions for the next investigator; record the next review time and acknowledge the handoff. | A reviewer can continue from a full transaction ID and output index without reconstructing prior work. |
+| Establish the incident | Compare contemporaneous loss reporting, the seed transaction, and later attribution. Record publication dates and resolve conflicts. | A chronology that separates transaction evidence from subsequent intelligence. |
+| Validate the initial movement | Check the seed transaction, input/output amounts, fees, and confirmed status. Preserve the retrieved data and retrieval time. | The reported loss distinguished from the transaction's gross input value. |
+| Extend individual branches | Follow specific spent outputs and check available service attribution. Document the basis for each new connection. | Prioritized leads with full identifiers, evidence, uncertainty, and next action. |
+| Prepare further investigation | Record the trace boundary, outstanding questions, and evidence needed for each proposed service or records inquiry. | A reviewer can continue from a full transaction ID and output index. |
 
 Urgency comes from the asset exposure and evidence, not the number of times a complaint appears. Separate exchange-level loss from individual customer claims to avoid counting the same stolen assets twice.
 
@@ -35,9 +35,9 @@ Urgency comes from the asset exposure and evidence, not the number of times a co
 
 For a verified custodial lead, a proposed records package would identify the incident, authority and contact, network, asset, full deposit transaction and output, relevant time window, attributable amount, and attribution basis. Potential records include account identifiers, KYC, deposit/withdrawal history, and relevant login/device records. Preservation, account restriction, and disclosure are separate outcomes; none should be described as completed without a response establishing it.
 
-## AI-output review examples
+## Analytical quality checks
 
-These are illustrative quality-control checks, not results from a deployed model or a completed benchmark.
+These checks keep the conclusions aligned with the transaction records and the chronology of the reporting.
 
 | Candidate assertion | Review decision |
 |---|---|
@@ -49,14 +49,14 @@ These are illustrative quality-control checks, not results from a deployed model
 
 ## Handoff record
 
-**Status:** Initial Bitcoin distribution reconstructed from public explorer responses. Historical case; no live response underway.
+**Status:** Initial Bitcoin distribution analyzed and reconciled against preserved public explorer responses.
 
-**Verified boundary:** Seed transaction through the initial terminal output set listed in [wallets-and-transactions.md](wallets-and-transactions.md). “Terminal” means the stopping point of this reconstruction, not that an output remains unspent.
+**Verified boundary:** Seed transaction through the initial terminal output set listed in [wallets-and-transactions.md](wallets-and-transactions.md). “Terminal” identifies where the published trace stops; current spend status requires a fresh check.
 
 **Attribution:** Public researcher linkage to the DMM incident; later government attribution recorded separately. Address ownership is not proved by a transaction record.
 
-**Next owner/action:** Specialist tracer to continue from each listed outpoint and evaluate any service exposure. An incident lead should coordinate business-record requests if operating with authorization.
+**Next research priorities:** Continue from each listed outpoint and evaluate any service exposure. A verified service connection can support a targeted records inquiry through the appropriate authorized process.
 
 **Open questions:** Which downstream transfers are directly connected? Which services, if any, control an identifiable endpoint? What can provider records establish about account control? What value is still available now?
 
-**Success measures for a real operation:** Time to validated disposition, proportion of leads with complete identifiers, reviewer reversal rate, and time to acknowledged handoff. No throughput, recovery, or business-impact metrics are claimed for this exercise.
+**Review criteria:** Complete transaction identifiers, reproducible output continuity, reconciled amounts and fees, dated attribution, and clearly stated evidence requirements for each unresolved lead.

@@ -1,6 +1,6 @@
 # Sources and evidence register
 
-The incident is dated October 29, 2026. Individual UTC collection timestamps and source URLs are recorded in [evidence/snapshot.json](evidence/snapshot.json). This starter package is a point-in-time reconstruction, not continuous monitoring.
+The incident is dated October 29, 2026. Individual UTC collection timestamps and source URLs are recorded in [evidence/snapshot.json](evidence/snapshot.json). This evidence package records transaction data at the documented collection times.
 
 ## Transaction register
 
@@ -33,6 +33,6 @@ There are **13 capture bodies**. `body_sha256` hashes the exact bundled UTF-8 bo
 
 - [Reuters, October 29](https://www.reuters.com/legal/transactional/tether-circle-freeze-238-billion-after-binance-reports-security-incident-2026-10-29/): reporting context for Binance's investigation and reported aggregate frozen assets. It is not the source of individual ledger amounts.
 - [CryptoTicker incident report](https://cryptoticker.io/en/binance-hack-hot-wallet-drained/): lead for reported Tornado Cash funding. Its interpretation is not substituted for a verified withdrawal transaction or deposit linkage.
-- User-supplied screenshot, reviewed October 29: intake source for the initial wallet identifiers and reported USDT/USDC freeze amounts. The author, original post timestamp, and claimed Chainalysis tracing are not authenticated. The screenshot is not republished.
+- Public incident screenshot, reviewed October 29: research lead for the initial wallet identifiers and reported USDT/USDC freeze amounts. Its authorship, original post timestamp, and claimed Chainalysis tracing remain unverified. The screenshot is not republished.
 
 No freeze events, current frozen balances, complete cross-chain path, named actor, DPRK attribution, original attack root cause, or recovered value are independently established here. The USDC token sender's explorer label does not prove its legal ownership. Public transaction data is used without confidential case records or paid blockchain-intelligence exports.

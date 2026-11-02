@@ -66,6 +66,6 @@ Lists `0xdac17f958d2ee523a2206206994597c13d831ec7` as Ethereum USD₮. This is t
 
 The [verification script](verify_trace.py) checks SHA-256 over each saved UTF-8 body, explorer field agreement, ABI-decoded approval and multicall inputs, raw-event amounts, recipient totals, internal-call failure, gas arithmetic, and exclusion of the look-alike token. Etherscan extracts are factual subsets, not raw page archives. Hashes detect changes relative to the saved evidence; they do not authenticate a provider, establish collection-time notarization, or prove blockchain consensus.
 
-A separate Ethereum RPC receipt lookup returned null and supplies no corroboration. No node was independently synchronized or used to replay execution. The two-explorer comparison supports the bounded reconstruction without eliminating shared indexing or interpretation risks. The study establishes no current balance, complete downstream trace, victim identity, private-key compromise, law-enforcement attribution, or recovery.
+A separate Ethereum RPC receipt lookup returned null and supplies no corroboration. No node was independently synchronized or used to replay execution. The two-explorer comparison supports the documented transaction trace without eliminating shared indexing or interpretation risks. Current balances, downstream continuity, victim identity, private-key compromise, actor attribution, and recoverability remain unresolved.
 
 [Case overview](README.md)

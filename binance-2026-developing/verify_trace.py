@@ -57,7 +57,7 @@ def run(snapshot):
     auth=data['delegation']['authorization_list']
     check(len(auth)==50 and sum(x['status']=='ok' for x in auth)==1,'Authorization interpretation changed')
     check(sum(x['status']=='invalid_nonce' for x in auth)==49,'Nonce status mismatch')
-    check(len(keys)==6,'Expected six starter movements')
+    check(len(keys)==6,'Expected six selected movements')
     check(data['sweep']['token_transfers_overflow'],'Expected truncated sweep summary; do not infer complete token scope')
     check(next(e for e in snapshot['edges'] if e['asset']=='USDC')['source']!=data['usdc']['to'],'Token sender conflated with transaction target')
     return data

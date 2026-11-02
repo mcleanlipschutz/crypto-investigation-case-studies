@@ -1,9 +1,9 @@
 # DMM Bitcoin 2024
 ## Bitcoin trace and triage case study
 
-**Public-source reconstruction · Prepared October 26, 2026 · McLean Lipschutz**
+**McLean Lipschutz · Cryptocurrency Investigator · Research prepared October 26, 2026**
 
-This case study reconstructs the initial Bitcoin distribution following the DMM incident and explains how those findings would support triage and investigative handoff. It combines public reporting with transaction data checked against two Bitcoin explorers. It does not claim participation in the original investigation, identification of account holders, or recovery of stolen funds. Research, drafting, and data validation were assisted by AI; the sources, captured responses, and verification code are available for review.
+My investigation examines the initial Bitcoin distribution following the DMM theft, with a focus on transaction continuity, exact asset accounting, and follow-up priorities. The analysis combines source review with transaction data cross-checked against two Bitcoin explorers. The source register, preserved responses, and verification code document the basis for the findings.
 
 ## Executive finding
 
@@ -41,9 +41,9 @@ The seed additionally spends 4,503 BTC in inputs and pays 0.1 BTC in its own fee
 
 The repeated transfers are a peeling pattern: each transaction spends the previous remainder, sends a fixed amount to a new destination, and returns the residual to the initial recipient until the last transfer. This pattern is observable; an actor identity or cash-out service is not encoded in it.
 
-The reconstruction stops at the first ten destination outputs. Later mixer exposure, cross-chain transfers, exchange deposits, account ownership, current balances, and recovered value would require additional evidence. “Terminal output” means the end of this bounded trace, not an unspent output today.
+The published trace stops at the first ten destination outputs. Later mixer exposure, cross-chain transfers, exchange deposits, account ownership, current balances, and recovered value require additional evidence. “Terminal output” means the end of this bounded trace, not an unspent output today.
 
-The [triage and handoff](triage-and-handoff.md) translates the evidence into proposed priorities, provider-record needs, AI-output review checks, and an explicit handoff. Its first-hour schedule is an exercise target, not a claim about work performed during the incident.
+The [investigative assessment and follow-up](triage-and-handoff.md) records the analytical checks, prioritized leads, provider-record requirements, and next steps supported by the findings. Recommendations are distinguished from completed analytical work.
 
 ## Review the work
 

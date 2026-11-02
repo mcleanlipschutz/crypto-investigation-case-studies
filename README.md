@@ -1,98 +1,68 @@
-# Cryptocurrency Investigation Case Studies
+# Cryptocurrency Investigations
 
-A public portfolio of cryptocurrency tracing, blockchain investigation methodology, cross-chain analysis, incident triage, attribution handling, and investigative documentation.
+**McLean Lipschutz | Cryptocurrency Investigator**
 
-## Purpose
+I investigate cryptocurrency theft, fraud, and the movement of illicit funds. My work combines blockchain tracing, transaction analysis, public-source research, and investigative judgment to establish what happened, account for the assets involved, and identify leads for further investigation.
 
-My law-enforcement cryptocurrency investigations can involve victim information, non-public wallet intelligence, preservation requests, subpoenas, account records, investigative leads, and other information that should not be published.
+This repository documents my independent research into major exchange thefts and cryptocurrency scams. Each case presents the investigative questions, supporting evidence, analytical findings, and follow-up priorities. The documentation makes the reasoning behind each conclusion available for review.
 
-Because of that, the case studies in this repository use public blockchain data, government reporting, public incident reports, and published blockchain-intelligence research. The goal is to demonstrate how I approach a crypto investigation without disclosing protected or non-public case information.
+## Investigative Research
 
-I am not claiming credit for the original investigations documented here. These are independent reconstructions used to demonstrate tracing methodology, evidence handling, wallet organization, asset attribution, cross-chain analysis, and investigative decision-making.
+### [Binance October 2026 — Ethereum Fund-Flow Investigation](binance-2026-developing/README.md)
 
-## Featured Case Studies
+My Binance research examines selected Ethereum fund movements, EIP-7702 authorization metadata, token identity, and asset-freeze reporting. The published trace covers **six movements across four transactions**, cross-checked against Etherscan and Blockscout. It includes an Excel tracing workbook, a visual fund-flow diagram, wallet and transaction registers, preserved evidence, and an offline verification script.
 
-### [Bybit / Lazarus Group 2025 — Cross-Chain Crypto Tracing Case Study](bybit-lazarus-2025/README.md)
+The findings distinguish internal ETH transfers from transaction-envelope values, token senders from transaction targets, and initial receipts from onward movement. Freeze verification and additional asset branches remain documented follow-up priorities.
 
-The February 2025 Bybit theft is a useful tracing case because the laundering activity moved well beyond a simple wallet-to-wallet path. Public reporting documents:
+### [USDT Approval Phishing 2026 — Ethereum Transaction Investigation](usdt-approval-phishing-2026/README.md)
 
-- approximately $1.46 billion in stolen cryptoassets
-- rapid Ethereum wallet fan-out
-- conversion of ERC-20 assets
-- decentralized exchange activity
-- chain peeling and repeated use of intermediary wallets
-- cross-chain movement from Ethereum into Bitcoin
-- extensive THORChain activity
-- mixer, CoinJoin, and high-risk service exposure
-- later movement into additional chains and stablecoins
-- potential VASP and OTC investigative leads
-- official FBI attribution to North Korean TraderTraitor activity
+My analysis of the July 8, 2026 approval-phishing incident examines the spender allowance, contract execution, completed transfers, and exact initial loss. The evidence accounts for **999,999.368915 USDT across two transactions and three Transfer events**, with four transaction cross-checks between Etherscan and Blockscout.
 
-The case study separates direct on-chain evidence from government attribution, blockchain-intelligence attribution, and analytical links. A connection is not treated as proven simply because it appears in a public cluster or tracing platform.
+The findings distinguish a failed internal call from a successful outer transaction and exclude a look-alike token from the loss calculation. The case includes captured evidence, reproducible verification, source discrepancies, and investigative follow-up priorities.
 
-### [DMM Bitcoin 2024 — Bitcoin Trace and Triage Case Study](dmm-bitcoin-2024/README.md)
+### [DMM Bitcoin 2024 — Bitcoin Distribution Investigation](dmm-bitcoin-2024/README.md)
 
-A public-source reconstruction of the initial distribution following the DMM Bitcoin theft, with 11 transactions cross-checked against two public Bitcoin explorers. It includes exact output and fee accounting, ten destination outputs, a saved evidence snapshot, and an offline verification script.
+My DMM research follows the initial Bitcoin distribution through **11 transactions**, checked against mempool.space and Blockstream. The trace reconciles the **4,502.9 BTC** starting output to ten destination outputs and the exact distribution fees.
 
-The accompanying triage workflow shows how to prioritize leads, review AI-generated assertions, handle conflicting sources, and prepare a clear investigative handoff. It separates verified transaction fields from public attribution and proposed actions. No participation in the original investigation or asset recovery is claimed.
+The case documents outpoint continuity, integer-satoshi accounting, source conflicts, and the distinction between historical receipts and current balances. A preserved evidence snapshot and offline verifier support review of the findings and continued tracing from each destination.
 
-### [USDT Approval Phishing 2026 — Ethereum Scam Trace and Triage](usdt-approval-phishing-2026/README.md)
+### [Bybit / Lazarus Group 2025 — Cross-Chain Investigation](bybit-lazarus-2025/README.md)
 
-A reconstruction of the July 8, 2026 Ethereum approval-phishing incident covered in the news on July 9. It verifies an initial loss of 999,999.368915 USDT across two transactions and three Transfer events, with exact token-unit accounting and four transaction cross-checks between Etherscan and Blockscout.
+My Bybit research examines the reported theft and laundering sequence, including Ethereum wallet fan-out, token conversion, intermediary wallets, THORChain exposure, movement into Bitcoin, and potential service endpoints. The case organizes published addresses and transaction identifiers into an investigative framework with explicit evidence requirements for each phase.
 
-The study examines an unlimited token approval, a successful multicall containing a failed internal transfer, and a look-alike USDT token excluded from the loss. It includes captured evidence, an offline verification script, source discrepancies, and a proposed investigative handoff. It does not claim participation in the original case or recovery of funds.
+Government attribution, published blockchain-intelligence findings, observable transaction activity, and analytical links are recorded separately. Reported downstream routes remain attributed to their sources until transaction-level continuity is established.
 
-### [Binance October 2026 — Developing Incident and Excel Trace](binance-2026-developing/README.md)
+## Research Methodology
 
-A starter trace of six selected Ethereum fund movements across four transactions, cross-checked against Etherscan and Blockscout. Includes an editable Excel workbook, wallet and directed-edge CSVs, a visual trace, evidence extracts, and offline validation. Reported freezes and open attribution leads remain separate from verified movements. This is a developing case study, not a complete loss or recovery assessment.
+I organize cryptocurrency investigations around five questions:
 
-## Investigative Approach
+1. **What establishes the loss?** Identify the relevant transactions, assets, amounts, and execution outcomes.
+2. **Where did the value move?** Follow full addresses and transaction identifiers, accounting for fees, conversions, and commingled funds.
+3. **What supports each connection?** Examine transaction records, contract events, service records, and attribution sources.
+4. **What can the evidence establish?** Separate verified observations from analytical conclusions and unresolved questions.
+5. **What merits follow-up?** Prioritize branches, service exposure, and records that could establish continuity or account control.
 
-For each material hop, I want enough information that another investigator can understand why it belongs in the trace:
+Each material trace entry records the network, asset, full source and destination addresses, transaction hash, amount, timestamp, evidence source, and investigative significance. Where an allocation is supported, case-attributable value is distinguished from the total movement. Cross-chain and privacy-service links require their own supporting evidence.
 
-- full sending wallet
-- full receiving wallet
-- transaction hash
-- blockchain
-- asset
-- transaction amount
-- maximum potentially attributable case funds
-- date and time
-- service or entity attribution
-- evidence level
-- attribution source
-- investigator note explaining why the hop matters
+## Evidence Standards
 
-The graph is only one part of the investigation. The underlying transaction evidence, attribution source, asset accounting, and investigative lead are more important than the number of nodes on the screen.
-
-## Evidence Levels
-
-I use four basic evidence levels throughout these public reconstructions:
-
-| Level | Meaning |
+| Classification | Meaning |
 |---|---|
-| **VERIFIED ON-CHAIN** | Independently observable transaction, address, amount, contract interaction, or blockchain event |
-| **OFFICIAL ATTRIBUTION** | Publicly identified by a government agency, victim organization, or similarly authoritative source |
-| **SUPPORTED ATTRIBUTION** | Service, wallet cluster, or laundering path identified by established blockchain-intelligence research and supported by observable activity |
-| **ANALYTICAL LINK** | Reasoned connection supported by timing, amount, service behavior, or other indicators but not represented as a direct proven transaction unless the evidence establishes it |
+| **VERIFIED ON-CHAIN** | Transaction fields, amounts, contract activity, or events corroborated by the documented blockchain records and checks |
+| **OFFICIAL ATTRIBUTION** | Attribution published by a government agency, victim organization, or other authoritative source |
+| **SUPPORTED ATTRIBUTION** | Published blockchain-intelligence attribution supported by observable activity |
+| **ANALYTICAL LINK** | A reasoned connection whose supporting indicators and remaining uncertainty are stated explicitly |
 
-## Repository Structure
+My findings retain their source, observation date, and verification scope. A transaction link establishes movement; identifying the person or service controlling an address requires additional evidence.
 
-| Case folder | Contents |
-|---|---|
-| [bybit-lazarus-2025](bybit-lazarus-2025/README.md) | Overview, wallets and transactions, methodology, sources |
-| [dmm-bitcoin-2024](dmm-bitcoin-2024/README.md) | Overview, verified initial Bitcoin distribution, triage and handoff, sources, evidence snapshot, validation script |
-| [usdt-approval-phishing-2026](usdt-approval-phishing-2026/README.md) | Overview, approval and transfer evidence, token exclusions, triage and handoff, sources, evidence snapshot, validation script |
-| [binance-2026-developing](binance-2026-developing/README.md) | Developing incident, Excel tracing workbook, visual trace, graph CSVs, evidence, sources, verification script |
+## Published Materials
 
-Additional public or synthetic case studies can be added as separate folders while keeping the same evidence standard.
+The case folders contain research narratives, source registers, transaction records, and analytical notes. The DMM, USDT, and Binance cases also include preserved evidence and executable verification scripts. The Binance case includes an editable workbook and graph exports.
 
-## Scope
+This public research uses blockchain records, government releases, incident reporting, and published technical analysis. Confidential law-enforcement records, victim identifiers, and non-public account information are excluded. Completed analytical findings and recommended investigative actions are identified separately throughout the case records.
 
-This repository is for investigative training and professional portfolio use. It does not contain confidential law-enforcement case files, victim identifiers, subpoena returns, private exchange records, or proprietary blockchain-intelligence data.
+## Investigator
 
-Public attribution is preserved with its source. Analytical conclusions are labeled as analysis rather than presented as established fact.
+**McLean Lipschutz**
 
-## Author
-
-McLean Lipschutz
+Cryptocurrency investigations, blockchain tracing, financial-crime research, and investigative documentation.

@@ -181,6 +181,6 @@ The case study separates:
 - observable on-chain transactions
 - official government or victim attribution
 - blockchain-intelligence attribution
-- analytical reconstruction
+- analytical conclusions
 
 That distinction should remain visible in the graph and case notes.

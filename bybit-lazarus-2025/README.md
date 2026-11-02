@@ -1,13 +1,13 @@
 # Bybit / Lazarus Group 2025
 ## Cross-Chain Crypto Tracing Case Study
 
-## Why I Used a Public Case
+**McLean Lipschutz · Cryptocurrency Investigator**
 
-Most of the cryptocurrency investigations I work on involve law-enforcement records, victim information, investigative leads, preservation requests, subpoenas, and other material that I cannot post publicly.
+## Investigation Overview
 
-This case study is different. Everything used here comes from public blockchain data, government reporting, public incident reports, and published blockchain-intelligence research. The purpose is to show how I approach a large crypto investigation without disclosing information from an actual case.
+My Bybit research examines the theft, initial distribution, asset conversions, and reported cross-chain laundering routes. I organize the evidence by investigative phase and distinguish transaction records from government attribution, published intelligence, and analytical links.
 
-This is not an attempt to claim credit for the original Bybit investigation. It is a reconstruction of a public case used to demonstrate tracing methodology, evidence handling, wallet organization, cross-chain analysis, and investigative decision-making.
+The published work includes incident chronology, a wallet and transaction register, source evaluation, and a methodology for extending individual branches. Each reported route retains its source and verification status so that follow-up tracing can focus on the evidence still needed to establish continuity.
 
 ---
 
@@ -22,7 +22,7 @@ On February 21, 2025, Bybit suffered a compromise of one of its Ethereum cold wa
 
 Bybit reported that the stolen assets were initially split across 39 addresses. On February 26, 2025, the FBI publicly attributed the theft to North Korea and identified the activity as **TraderTraitor**. The FBI reported that stolen assets had been converted into Bitcoin and other virtual assets and dispersed across thousands of addresses on multiple blockchains.
 
-The laundering that followed is what makes this case useful for tracing practice. Public reporting documents:
+The laundering that followed presents several investigative challenges. Public reporting documents:
 
 - rapid wallet fan-out
 - token swaps through decentralized exchanges
@@ -40,7 +40,7 @@ This is not a one-chain wallet trace. It is a large laundering network where the
 
 ## Primary Investigative Questions
 
-I approached the case with the same questions I would use when starting a crypto fraud or theft investigation:
+My research is organized around the following investigative questions:
 
 1. What transaction establishes the original loss?
 2. What wallet or contract was compromised?
@@ -146,15 +146,15 @@ An address or activity publicly identified by a government agency, victim exchan
 A service, wallet cluster, or laundering path identified by established blockchain-intelligence research and supported by observable blockchain activity.
 
 ### ANALYTICAL LINK
-A connection used during reconstruction that is supported by timing, amounts, service behavior, or other indicators but should not be presented as a proven transaction unless the underlying evidence establishes it.
+A connection supported by timing, amounts, service behavior, or other indicators, with its evidentiary basis and uncertainty recorded explicitly.
 
 If a link cannot be supported, it does not belong in the final trace as a confirmed hop.
 
 ---
 
-## What I Would Capture for Every Hop
+## Transaction Documentation Standard
 
-For each material transaction I want:
+My documentation standard for each material transaction is:
 
 | Field | Purpose |
 |---|---|
@@ -173,9 +173,9 @@ For each material transaction I want:
 
 ---
 
-## Investigative Value of the Case
+## Areas of Investigative Analysis
 
-This case is useful because it forces the trace through several different problems at once:
+The research addresses the following areas:
 
 - Ethereum account-based tracing
 - ERC-20 asset conversion
@@ -198,11 +198,9 @@ The goal is not to draw the biggest graph possible. The goal is to make the move
 
 ---
 
-## How I Would Present the Final Graph
+## Graph Structure for Continued Tracing
 
-I would not show hundreds or thousands of nodes in one view.
-
-The main graph should show the major stages:
+The planned overview separates the major stages of the reported laundering sequence:
 
 `Bybit Cold Wallet -> Exploit -> Initial Fan-Out -> DEX / Layering -> THORChain -> Bitcoin -> Mixer / Service Exposure -> Re-Emergence -> Off-Ramp`
 
@@ -215,18 +213,14 @@ This keeps the high-level laundering methodology visible while still allowing a 
 ## Files in This Case Study
 
 - [wallets-and-transactions.md](wallets-and-transactions.md) — public seed addresses, FBI TraderTraitor addresses, and exploit transaction hashes
-- [methodology.md](methodology.md) — tracing workflow and analytical rules used for the reconstruction
+- [methodology.md](methodology.md) — tracing workflow and analytical rules
 - [sources.md](sources.md) — government, victim, blockchain-intelligence, and technical sources
 
 ---
 
-## Scope and Limitations
+## Research Scope
 
-This case study uses public information only. I do not have Bybit's internal records, exchange account records, law-enforcement returns, proprietary TRM/Elliptic/Chainalysis/Arkham datasets, or non-public investigative evidence from the original case.
-
-Because of that, this reconstruction should not be represented as the complete official investigative trace.
-
-The case study is intended to demonstrate how I organize and analyze a complex cryptocurrency investigation using information that can be shared publicly.
+The published analysis draws on public blockchain records, government releases, victim reporting, and technical research. The register distinguishes identified starting points from downstream routes reported by other researchers. Confirming additional branches requires transaction-level continuity and, where relevant, service records. Source attribution remains attached to each externally reported finding.
 
 ## Author
 

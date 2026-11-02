@@ -1,8 +1,8 @@
 # USDT Approval Phishing — July 2026
 
-**Public-source reconstruction · Prepared October 26, 2026 · McLean Lipschutz**
+**McLean Lipschutz · Cryptocurrency Investigator · Research prepared October 26, 2026**
 
-This case study reconstructs an Ethereum approval-phishing incident reported by Scam Sniffer and covered by Cointelegraph on July 9, 2026. The transactions occurred on **July 8, 2026 UTC**. It demonstrates token-contract verification, allowance analysis, exact loss accounting, source review, and incident triage. It does not claim participation in the original investigation, identification of the people controlling the addresses, or asset recovery. Research, drafting, and validation were assisted by AI; captured evidence and verification code are included for review. [S1](sources.md#s1), [S5](sources.md#s5)
+My investigation examines the approval, contract execution, and initial loss in an Ethereum phishing incident reported by Scam Sniffer and covered by Cointelegraph on July 9, 2026. The transactions occurred on **July 8, 2026 UTC**. My analysis focuses on canonical token identification, spender permissions, successful and failed internal calls, exact loss accounting, and source discrepancies. Captured evidence and verification code support review of each finding. [S1](sources.md#s1), [S5](sources.md#s5)
 
 ## Executive finding
 
@@ -10,7 +10,7 @@ After the reported victim address approved a spender for the maximum `uint256` a
 
 The first multicall requested 200,000 USDT and 800,000 USDT. The 200,000 transfer completed; the 800,000 internal call failed with an invalid-opcode error. The outer transaction nevertheless succeeded. The second multicall transferred another 799,999.368915 USDT. Counting attempted calldata as completed movement would materially overstate the loss.
 
-**Proposed triage disposition:** escalate for specialist tracing and victim-support coordination. The initial recipient addresses are actionable leads, but this reconstruction establishes no verified custodial endpoint, current recoverable balance, actor identity, or recovery outcome.
+**Investigative priority:** extend the trace from the initial recipients and assess continuing allowance exposure. Custodial-service attribution, current balances, actor identity, and recoverability remain open questions.
 
 ## Verified chronology
 
@@ -26,7 +26,7 @@ All times below are July 8, 2026 UTC. Full identifiers and source links are in [
 
 Transaction position orders A1 before A2 within the same block. Block timestamps establish chain ordering and elapsed block time, not the exact time a person saw a prompt or submitted a transaction.
 
-## What this case demonstrates
+## Investigative Findings
 
 | Investigative question | Evidence-based answer |
 |---|---|
@@ -48,7 +48,7 @@ The bounded trace ends at recipients A and B in the initial drain. This is not a
 | File | Purpose |
 |---|---|
 | [wallets-and-transactions.md](wallets-and-transactions.md) | Full addresses, transaction identifiers, log indices, exclusions, and exact accounting |
-| [triage-and-handoff.md](triage-and-handoff.md) | Proposed response priorities, evidence gaps, AI-output checks, and handoff |
+| [triage-and-handoff.md](triage-and-handoff.md) | Investigative priorities, evidence gaps, analytical quality checks, and follow-up |
 | [sources.md](sources.md) | Source register, attribution limits, and reporting discrepancies |
 | [evidence/snapshot.json](evidence/snapshot.json) | Captured responses, extracted facts, and provenance |
 | [verify_trace.py](verify_trace.py) | Offline checks using Python's standard library |

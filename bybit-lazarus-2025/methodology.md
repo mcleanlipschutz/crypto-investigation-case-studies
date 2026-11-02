@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The point of this reconstruction is not to reproduce a vendor graph. I want to be able to explain why each material wallet, transaction, service, and cross-chain connection is in the trace.
+My tracing methodology requires a documented evidentiary basis for each material wallet, transaction, service, and cross-chain connection in the analysis.
 
 If I cannot explain why two nodes are connected, the line should not be presented as a confirmed path.
 
@@ -30,7 +30,7 @@ This gives the trace a fixed starting point.
 
 I trace forward from confirmed stolen assets instead of starting with a large attributed wallet cluster and assuming everything in the cluster belongs to the case.
 
-For every hop I want the full address and transaction hash.
+My documentation standard requires the full address and transaction hash for every hop.
 
 Shortened addresses can be used on a visual graph, but the underlying case notes should preserve the full identifier.
 
@@ -49,7 +49,7 @@ For each material hop I record:
 
 When funds commingle, I do not treat the entire wallet balance as stolen simply because stolen funds entered the wallet.
 
-For this public reconstruction, the conservative default is to record the **maximum potential stolen amount** that could be associated with the outbound transaction unless public evidence supports a more specific allocation.
+For this analysis, the conservative default is to record the **maximum potential stolen amount** that could be associated with the outbound transaction unless public evidence supports a more specific allocation.
 
 If a formal FIFO, LIFO, pro-rata, or other allocation method is used, it should be stated in the case notes and applied consistently.
 
@@ -188,7 +188,7 @@ The master view should show the laundering strategy. Branch views should hold th
 
 ## 10. Preserve the Reason for Every Important Conclusion
 
-For every major node or branch I want a note answering:
+My documentation standard requires a note for every major node or branch answering:
 
 - Why is this wallet in the case?
 - What transaction brought the case funds here?

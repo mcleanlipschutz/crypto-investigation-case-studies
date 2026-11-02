@@ -2,7 +2,7 @@
 
 ## Use of This File
 
-This is a seed list for reconstructing the public Bybit/Lazarus trace.
+This wallet and transaction register supports my research into the Bybit theft and reported Lazarus-related fund movements.
 
 The addresses below come from public government reporting, victim reporting, technical incident analysis, or public blockchain explorer data. They should not all be treated as the same type of evidence.
 
@@ -164,18 +164,16 @@ For this case study these are treated as **OFFICIAL ATTRIBUTION** seeds. The inc
 
 ---
 
-# Suggested Batch Workflow
+# Branch Verification Workflow
 
-Do not put every address into the graph and assume the result is the case.
-
-A cleaner reconstruction is:
+Each branch requires its own transaction evidence. The verification sequence is:
 
 1. Start with the compromised Bybit cold wallet.
 2. Confirm the exploit transactions.
 3. Identify the first receiving addresses for each stolen asset.
 4. Trace the ETH and converted ERC-20 value forward.
 5. Use the FBI list as known-attribution checkpoints.
-6. Confirm which FBI addresses actually intersect the branch being reconstructed.
+6. Confirm which FBI addresses actually intersect the branch under review.
 7. Mark DEX, bridge, mixer, swap-service, exchange, and OTC nodes separately from normal self-hosted wallets.
 8. Preserve full transaction hashes for every material hop.
 9. Split the final graph into phases rather than one uncontrolled cluster.
@@ -184,4 +182,4 @@ A cleaner reconstruction is:
 
 # Important Limitation
 
-The FBI list is an attribution list, not a transaction-by-transaction answer key. A proper reconstruction still requires confirming how the stolen Bybit assets moved into, through, or around each relevant address.
+The FBI list establishes official address attribution. Confirming a fund-flow path requires transaction records showing how the stolen Bybit assets moved into, through, or around each relevant address.

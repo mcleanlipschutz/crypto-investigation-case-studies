@@ -1,6 +1,6 @@
 # Working with the tracing workbook
 
-Open [Binance_2026_Tracing_Workbook.xlsx](Binance_2026_Tracing_Workbook.xlsx) in Excel. It contains six seeded movement rows and space through row 105 for additions. The visible diagram is a **static initial snapshot**; the summary and Graph Edges sheet are formula-linked to the Transfers sheet.
+Open [Binance_2026_Tracing_Workbook.xlsx](Binance_2026_Tracing_Workbook.xlsx) in Excel. It contains six documented movement rows and space through row 105 for additions. The visible diagram is a **static initial snapshot**; the summary and Graph Edges sheet are formula-linked to the Transfers sheet.
 
 ## Extend the trace
 
@@ -21,7 +21,7 @@ The evidence snapshot and CSV preserve exact decimal strings. When importing CSV
 
 ## Produce a visual trace
 
-The repository contains starter [nodes.csv](nodes.csv) and [edges.csv](edges.csv). These are static exports of the initial six movements. To export updates, save the Wallets and Graph Edges sheets as separate CSV copies, excluding blank IDs and unverified records. Keep the original `.xlsx` intact.
+The repository contains graph data in [nodes.csv](nodes.csv) and [edges.csv](edges.csv). These are static exports of the initial six movements. To export updates, save the Wallets and Graph Edges sheets as separate CSV copies, excluding blank IDs and unverified records. Keep the original `.xlsx` intact.
 
 For a graph tool accepting node and edge tables:
 

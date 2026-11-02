@@ -2,7 +2,7 @@
 
 [Case overview](README.md) · [Transaction evidence](wallets-and-transactions.md) · [Triage workflow](triage-and-handoff.md)
 
-Sources were reviewed on October 26, 2026. This is a bounded historical reconstruction, not a comprehensive update on all subsequent DMM-related developments. Narrative sources are linked rather than reproduced. Explorer response retrieval times are preserved in the [evidence snapshot](evidence/snapshot.json).
+Sources were reviewed on October 26, 2026. My research focuses on the historical initial distribution and the evidence supporting incident attribution. Narrative sources are linked rather than reproduced. Explorer response retrieval times are preserved in the [evidence snapshot](evidence/snapshot.json).
 
 ## S1
 
@@ -16,7 +16,7 @@ Supports the reported 4,502.9 BTC loss, approximately $308 million at the time, 
 **Elliptic Research — May 31, 2024**  
 [DMM Bitcoin loses $308 million in “unauthorized leak”](https://www.elliptic.co/insights/dmm-bitcoin-loses-308-million-in-unauthorized-leak/)
 
-Contemporaneous researcher account of DMM's announced loss and early dispersal. The published graph is described as current at 15:00 UTC. It provides context, not a substitute for checking individual transaction outputs. This study does not claim access to Elliptic's proprietary dataset.
+Contemporaneous researcher account of DMM's announced loss and early dispersal. The published graph is described as current at 15:00 UTC. I use this public report for incident context and check individual transaction outputs against the explorer records documented below.
 
 ## S3
 
